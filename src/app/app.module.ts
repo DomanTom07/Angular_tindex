@@ -1,3 +1,13 @@
+/*
+* File: app.module.ts
+* Author: Tamás Domán
+* Copyright: 2023, Tamás Domán
+* Group: Szoft II N
+* Date: 2023-02-07
+* Github: https://github.com/DomanTom07/
+* Licenc: GNU GPL
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
