@@ -7,13 +7,15 @@ import { GitComponent } from './git/git.component';
 import { AboutComponent } from './about/about.component';
 import { TindexComponent } from './tindex/tindex.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GitComponent,
     AboutComponent,
-    TindexComponent
+    TindexComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

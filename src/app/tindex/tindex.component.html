@@ -1,1 +1,28 @@
-<p>tindex works!</p>
+<h1>Testtömegindex számítás</h1>
+
+<div class="indexForm">
+    <div class="mt-3">
+        <input type="text"
+        placeholder="Magasság (méterben)"
+        [formControl]="height"
+        class="form-control">
+    </div>
+    <div class="mt-3">
+    <input type="text"
+        placeholder="Testtömeg"
+        [formControl]="weight"
+        class="form-control"
+        (keyup)="onKeyup($event)">
+    </div>
+
+    <button (click)="onClickCalcButton()" class="mt-3 btn btn-info">Számit</button>
+
+    <div class="mt-3"
+    *ngIf="indexVisible">
+        <h3>Eredmény:</h3>
+        <input type="text"
+        readonly
+        [formControl]="index"
+        class="form-control">
+    </div>
+</div>
